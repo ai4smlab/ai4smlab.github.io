@@ -1,433 +1,184 @@
-<!DOCTYPE HTML>
-<!--
-	AIMS Lab
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | AI for Smart Mobility Lab</title>
+<meta name="description" content="Funded research projects at the AI4SM Lab: connected and automated vehicle safety, SDV contextual observability, seamless integrated mobility, and eco-efficient last-mile delivery.">
+<meta name="keywords" content="AI for Smart Mobility, AI4SM, KFUPM, smart mobility, software-defined vehicles, agentic AI, seamless integrated mobility, last-mile delivery, intelligent transportation">
+<link rel="canonical" href="https://ai4sm.org/research.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI for Smart Mobility Lab at KFUPM">
+<meta property="og:title" content="Research | AI for Smart Mobility Lab">
+<meta property="og:description" content="Funded research projects at the AI4SM Lab: connected and automated vehicle safety, SDV contextual observability, seamless integrated mobility, and eco-efficient last-mile delivery.">
+<meta property="og:url" content="https://ai4sm.org/research.html">
+<meta property="og:image" content="https://ai4sm.org/images/AV2.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#027e40">
+<link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  // Set the theme before first paint so there is no flash of the wrong colors.
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 
--->
-<html>
-	<head>
-		<title>AI for Smart Mobility Lab @KFUPM</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <style>
-        #map {
-            width: 100%;
-            height: 500px;
-        }
-    </style>
-	</head>
-	<body class="no-sidebar is-preload">
-		<div id="page-wrapper">
-
-			<!-- Header -->
-				<section id="header" class="wrapper">
-
-					<!-- Logo -->
-						<div id="logo">
-							<h1>Research</h1>
-							<p>Driving innovation for sustainable mobility</p>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li><a href="news.html">News</a></li>
-								<li><a href="team.html">Team</a></li>
-								<li><a href="research.html">Research</a></li>
-								<!--<li><a href="facilities.html">Facilities</a></li>-->
-								<li><a href="publications.html">Publications</a></li>
-							    <li><a href="talks.html">Tech Talks</a></li>
-								<li><a href="join.html">Join</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
-							</ul>
-						</nav>
-
-				</section>
-
-			<!-- Current research Projects -->
-				<div id="main" class="wrapper style2">
-					<div class="title">Current research Projects</div>
-					
-					<div class="container">
-					<!-- Content -->
-						<div id="content">
-							<div align="left">
-								<img src="images/SDV.png" width="230" height="200" alt="SDV"  style="padding-right: 20px; display: block; float:left; border: none;">
-							</div>
-
-							<div>
-								<h1 class="blog-title">Contextual Observability of Software-Defined Vehicles</h1>
-							</div>
-							<div>
-								<p>SDV architecture decouples hardware and software, enabling OEMs to manage, update, and enhance vehicle features and functions through software alone. However, SDVs introduce unique challenges in ensuring system resilience, reliability, and real-time fault diagnosis. Observability is critical in such environments but remains underdeveloped for SDVs. This project aims to develop a testbed for SDV contextual observability that enables collecting multimodal telemetry data, facilitating continuous monitoring, advanced analytics, causal inferencing and automated incident response.
-								<br> Funding agency:  IRC for Smart Mobility and Logistics (SML) at KFUPM - Duration: 2025-2027
-								<!--<br> Topics: Software-defined vehicles, contextual observability, adavanced analytics, causal inference, automated incident response.-->
-								</p>
-							</div>
-						</div>
-                    </div>
-                    
-					<div class="container">
-					<!-- Content -->
-						<div id="content">
-							<div align="left">
-								<img src="images/SIM.png" width="230" height="200" alt="SIM"  style="padding-right: 20px; display: block; float:left; border: none;">
-							</div>
-
-							<div>
-								<h1 class="blog-title">Agentic AI-based Framework for Seamless Integrated Mobility</h1>
-							</div>
-							<div>
-								<p>Aligning with Saudi Vision 2030, this project supports Saudi Arabia’s goals to increase public transit use and improve accessibility for all citizens, including individuals with disabilities, the elderly, and low-income groups. The research focuses on developing a agentic AI-based framework for Seamless Integrated Mobility (SIM), envisioned as a unified platform that integrates multimodal transportation options.
-								<br> Funding agency:  KFUPM Deanship Research - Duration: 2025-2026
-								<!--<br> Topics: Seamless integrated mobility, agentic AI, end-to-end planning, service bundling, context-aware services, supply-demand matching.-->
-								</p>
-							</div>
-						</div>
-					</div>	
-						
-					<div class="container">
-					<!-- Content -->
-						<div id="content">
-							<div align="left">
-								<img src="images/Last_mile.jpg" width="230" height="200" alt="Last-mile delivery"  style="padding-right: 20px; display: block; float:left; border: none;">
-							</div>
-
-							<div>
-								<h1 class="blog-title">SmartDispatch: AI-driven Optimization for Eco-Efficient Last-Mile Delivery</h1>
-							</div>
-							<div>
-								<p>Saudi Arabia is a major market for eCommerce, with a growing number of people shopping online regularly. This growth has driven an increase in last-mile delivery services, creating a need for more efficient digital platforms. This project addresses the eco-efficient and adaptive routing problem during both liveheading and deadheading states of delivery vehicles, including trucks, cars, cargo bikes, and motorcycles. By optimizing last-mile delivery routes, the project contributes to Saudi Arabia's goal of significantly reducing transportation costs by 2030.
-								<br> Funding agency:   IRC for Smart Mobility and Logistics (SML) at KFUPM - Duration: 2025-2027
-								<!--<br> Topics: Last-mile delivery, dynamic route optimization, eco-efficiency, dead-heading.-->
-								</p>
-							</div>
-						</div>					
-					</div>	
-											
-						
-						
-					</div>
-				</div>
-
-			<!-- Previous research Projects -->
-			<div id="highlights" class="wrapper style3">
-				<div class="title">Samples of Previous Projects</div>
-					<div class="container">
-						<!-- Content -->
-						<div id="content">
-							<div align="left">
-								<img src="images/GM.png" width="230" height="200" alt="Alaa Khamis"  style="padding-right: 20px; display: block; float:left; border: none;">
-							</div>
-							<div>
-								<h1 class="blog-title">General Motors Projects</h1>
-							</div>
-							<div>
-								<p>Before joining KFUPM, the PI served as the AI and Smart Mobility Technical Leader at General Motors Canada. He led AI/ML projects focused on software-defined vehicles, connected and automated driving technologies, active safety systems, and prognostics, achieving successful technology insertions. He co-invented and filed 72 patents, trade secrets, and defensive publications, earning recognition as “Inventor of the Month” multiple times by GM's Global Patent & Invention Management team. The advanced features developed were for future GM vehicle models; therefore, further details cannot be disclosed due to confidentiality agreements with GM. Additional information about the filed patents can be found <a href="https://alaakhamis.org/publications.html" target="_blank">here</a>.
-								</p>
-							</div>
-						</div>
-					</div>
-						
-					<div class="container">
-						<!-- Content -->						
-						<div id="content">
-							<div align="left">
-								<img src="images/VRU.png" width="230" height="200" alt="Alaa Khamis"  style="padding-right: 20px; display: block; float:left; border: none;">
-							</div>
-
-							<div>
-								<h1 class="blog-title">VRU Crossing Intent Prediction</h1>
-							</div>
-							<div>
-								<p>This research project introduces an innovative framework for pedestrian crossing intention prediction. The framework incorporates an image enhancement pipeline, which enables the detection and rectification of various defects that may arise during unfavorable weather conditions. Subsequently, a transformer-based network, featuring a self-attention mechanism, is employed to predict the crossing intentions of target pedestrians. This augmentation enhances the model's resilience and accuracy in classification tasks. Through evaluation on the JAAD dataset, our framework attains state-of-the-art performance while maintaining a notably low inference time. Moreover, a deployment environment is established to assess the real-time performance of the model. The results of this evaluation demonstrate that our approach exhibits the shortest model inference time and the lowest end-to-end prediction time, accounting for the processing duration of the selected inputs.
-								<br> Funding agency: IoT Research Laboratory, Ontario Tech University									
-								<br> Duration: 2022-2024 | Topics: image enhancement, self-attention mechanism, vision transformers.
-								</p>
-							</div>
-						</div>
-                    </div>
-                    
-                    
-					<div class="container">
-						<!-- Content -->                    
-						<div id="content">
-							<div align="left">
-								<img src="images/Robustness.png" width="300" height="350" alt="Alaa Khamis"  style="padding-right: 20px; display: block; float:left; border: none;">
-							</div>
-
-							<div>
-								<h1 class="blog-title">Robustness of Deep Learning-based VRU Detection Models</h1>
-							</div>
-							<div>
-								<p>This research project highlights the critical role of accurate pedestrian detection in assisted and automated driving systems to enhance road safety. Real-world deployment faces challenges like image corruption and occlusions, addressed here through robust, stylized, and occluded training techniques. Robust Training uses intentionally corrupted examples to simulate real-world scenarios, significantly improving model resilience to various corruptions. Categorized training further refines performance by tailoring augmentations to specific corruption types. Stylized Training employs Adaptive Instance Normalization (AdaIN) to introduce texture and style variations, enriching the dataset. This approach boosts pedestrian detection accuracy, achieving notable improvements in mean Average Precision (mAP50), particularly in handling noise, blur, and weather-related distortions. Occluded Training generates datasets simulating different occlusion levels, enhancing model performance on occluded samples with a ∼2% increase in mAP50. This method demonstrates effectiveness in improving detection in challenging scenarios. Overall, the combined techniques improve model adaptability and robustness in diverse conditions, achieving a ∼2-4% performance boost. This work establishes a solid foundation for deploying reliable pedestrian detection models in complex environments, advancing the safety and reliability of automated driving systems.
-								<br> Funding agency: Nile University									
-								<br> Duration: 2022-2024 | Topics: assisted and asutomated driving, VRU detection, model robustness
-								</p>
-							</div>
-						</div>
-                    </div>
-                    
-					<div class="container">
-						<!-- Content -->    
-						<div id="content">
-							<div align="left">
-								<img src="images/Bus.png" width="230" height="200" alt="Alaa Khamis"  style="padding-right: 20px; display: block; float:left; border: none;">
-							</div>
-
-							<div>
-								<h1 class="blog-title">Optimal Placement of Bus Stops</h1>
-							</div>
-							<div>
-								<p>Bus systems play an important role in the modern city. Carefully designed bus stop locations can lift up overall transportation efficiency and save more time for passengers. In this paper, Particle Swarm Optimization (PSO)-based approach is proposed to find the optimal placement of bus stops in Waterloo/Kitchener area. The selection of the bus stops placements takes into account neighborhood population, family income, age distribution, and other factors. The overall goal is to minimize the average travel time of the passengers which is composed of two parts namely passenger time in the bus and out of the bus. Experimental results on real bus lines in Waterloo/Kitchener region, Canada showed that both PSO and adaptive PSO provide shorter average commuting time compared to the original bus routes. Moreover, the optimized placement needs less number of bus stops compared to the original number of stations.
-								<br> Funding agency: University of Toronto									
-								<br> Duration: 2022-2023 | Topics: optimal placement, swarm intelligence, particle swarm optimization.
-								</p>
-							</div>
-						</div>
-                    </div>
-
-
-					<div class="container">
-						<!-- Content -->    
-						<div id="content">
-							<div align="left">
-								<a href="https://www.youtube.com/watch?v=lWci4P_Q5ho" target="_blank"><img src="images/epaymenet.png" width="270" height="200" style="padding-right: 20px; display: block; float:left; border: none;"></a>
-							</div>
-
-							<!-- Text on the right -->
-							<div>
-								<h1 class="blog-title">Future of Public Transport Experience</h1>
-								<p>
-									E-Payment for public transport is a use case built by DM TECH featuring smart bus-station experience. The concept was designed to visualize the influence of digitalizing public transport accessibility, ticketing and payment. 
-									The experience is also available in VR for user- friendly and interactive simulation. 
-									<br>This work was conducted under direct supervision of the PI in his capacity as CTO of Disruptive Mobility Tech (DMTech).
-								</p>
-							</div>
-						</div>
-                    </div>
-                    
-					<div class="container">
-						<!-- Content -->                       
-						<div id="content">
-							<div align="left">
-								<a href="https://www.youtube.com/watch?v=GIWQZ4giurE" target="_blank"><img src="images/smartcity.png" width="270" height="200" style="padding-right: 20px; display: block; float:left; border: none;"></a>
-							</div>
-
-							<!-- Text on the right -->
-							<div>
-								<h1 class="blog-title">Smart City Walkthrough</h1>
-								<p>
-									Smart city concept designed by DM TECH Experience Design team. The concept feature a street walkthrough integrating different technologies to support smarter, sustainable and personalized city experience. 
-									The experience is also available in VR for user- friendly and interactive simulation.
-									<br>This work was conducted under direct supervision of the PI in his capacity as CTO of Disruptive Mobility Tech (DMTech).
-								</p>
-							</div>
-						</div>
-                    </div>
-                    
-					<div class="container">
-						<!-- Content -->      
-                    
-						<div id="content">
-						    <div align="left">
-								<a href="https://www.youtube.com/watch?v=gT1hhBZg5dU" target="_blank"><img src="images/AV.png" width="270" height="200" style="padding-right: 20px; display: block; float:left; border: none;"></a>
-							</div>
-                             
-							<!-- Text on the right -->
-							<div>
-								<h1 class="blog-title">Virtual ride experience for autonomous driving</h1>
-								<p>
-									A virtual ride experience for autonomous driving that Mobileye introduced a model-based approach to safety entitled 									Responsibility-Sensitive Safety (RSS) (Shalev-Shwartz et al., 2017). RSS
-									highlights five safety rules an automated driving vehicle should be able to  follow. These five rules include safe distance (i.e., the self-driving vehicle
-									should not hit the vehicle in front), cutting in (the self-driving vehicle should be able to identify when lateral safety may be compromised by a driver unsafely
-									crossing into its lane), right of way (the self-driving vehicle should be able to protect itself against human drivers who do not properly adhere to the right
-									of way rules), limited visibility (be cautious in areas with limited visibility), and avoiding crashes (the self-driving vehicle should avoid a crash without causing
-									another one). The environment, vehicle interior and assessment criteria were built to enable virtual testing and passenger-centric feedback collection using VR.
-									<br>This work was conducted under direct supervision of the PI in his capacity as CTO of Disruptive Mobility Tech (DMTech).
-								</p>
-							</div>
-						</div>
-                    </div>
-                    
-					<div class="container">
-						<!-- Content -->      						
-                        
-						<div id="content">
-						    <div align="left">
-								<a href="https://www.youtube.com/watch?v=uSGsItMBHnQ" target="_blank"><img src="images/Hyperloop.png" width="270" height="200" style="padding-right: 20px; display: block; float:left; border: none;"></a>
-							</div>
-							<!-- Text on the right -->
-							<div>
-								<h1 class="blog-title">Hyperloop Station Concept: El-Waha Revival </h1>
-								<p>
-									El-Waha (The Oasis) Hyperloop station concept simulate the contribution of transportation technology in building the future. The revival story features accessibility, availability, smartness, and design creativity to support smart city infrastructure and user expectations. 
-									Architecture concept, design, model, and visualization is owned by DM TECH.									
-									The experience is also available in VR for user- friendly and interactive simulation.
-									<br>This work was conducted under direct supervision of the PI in his capacity as CTO of Disruptive Mobility Tech (DMTech).
-								</p>
-							</div>
-						</div>						
-                    </div>
-                    
-					<div class="container">
-						<!-- Content -->      
-						<div id="content">
-						    <div align="left">
-								<a href="https://www.youtube.com/watch?v=n5RzepPWwbU" target="_blank"><img src="images/testbed.png" width="270" height="200" style="padding-right: 20px; display: block; float:left; border: none;"></a>
-							</div>
-							
-							<!-- Text on the right -->
-							<div>
-								<h1 class="blog-title">Hyperloop Lab Facility</h1>
-								<p>
-									Here is a quick tour in the first Hyperloop Lab Facility in the world!
-									The Hyperloop is a disruptive solution for the future of mobility and high speed transport. And despite the fact that the technology have been there for a long time now, there isn't still information accessibility and testing availability worldwide.  
-									This lab facility can be used for professional and educational training on Hyperloop technology and other related technologies. It allows students, trainees and researchers to study, experiment and understand different aspects of Hyperloop and similar technologies as disruptive transportation systems.
-									<br>This work was conducted under direct supervision of the PI in his capacity as CTO of Disruptive Mobility Tech (DMTech).
-								</p>
-							</div>
-						</div>		
-                    </div>
-                    
-					<div class="container">
-						<!-- Content -->                              
-						<div id="content">
-						    <div align="left">
-								<a href="https://www.youtube.com/watch?v=h-SNTHZiomE" target="_blank"><img src="images/Z21.png" width="270" height="200" style="padding-right: 20px; display: block; float:left; border: none;"></a>
-							</div>
-							
-							<!-- Text on the right -->
-							<div>
-								<h1 class="blog-title">Façade cleaning robot</h1>
-								<p>
-									Z21 is a smart automated façade cleaning system that encompasses a rooftop robot and a cleaning robot. The rooftop robot is a 2-degrees of freedom (DOF) motorized rooftop gantry crane that is responsible for positioning the cleaning robot and carries all the cleaning reagent tanks as well as the hanging cables and computation tools. The cleaning robot is equipped with advanced motion and stabilization mechanisms and can automatically inspect and clean glass windows and façades. It has much higher cleaning capacity compared to state-of-the-art cleaning systems and manual cleaning and is designed to work in severe weather conditions. This system is suited well for cleaning wide variety of façades, flat and disposed surfaces of high-rise buildings.
-									<br>This work was conducted under direct supervision of the PI in his capacity as AI Devision Head at Sypron Solutions.
-								</p>
-							</div>
-						</div>	
-                    </div>
-                    
-					<div class="container">
-						<!-- Content -->      						
-						<div id="content">
-						    <div align="left">
-								<a href="https://www.youtube.com/watch?v=tceMP_r89-4" target="_blank"><img src="images/Agatha.png" width="270" height="200" style="padding-right: 20px; display: block; float:left; border: none;"></a>
-							</div>
-							
-							<!-- Text on the right -->
-							<div>
-								<h1 class="blog-title">Agatha</h1>
-								<p>
-									Predictive maintenance is a cornerstone of Industry 4.0. Agatha is a predictive maintenance system via cognitive IoT. This system encompasses spatially distributed interoperable and accessible smart sensors able to selectively collect, fuse and share data about machine condition. The selectively collected and fused data is then analyzed in order to get real-time insights and performance data, determine and dynamically update the likelihood of failures and make timely decisions or recommendations. Agatha listens to the heart of a critical equipment, lets it communicate how it feels and offers advice whenever it needs looking after. Engineers will no longer need to manually gather data and generate reports for each critical equipment. Maintenance schedules can be easily planned by avoiding costly downtime. Productivity is increased, equipment lifetime is extended, energy is saved and maintenance cost is cut and unplanned stops are reduced or eliminated.
-									Agatha can be used to monitor and track stationary and mobile assets in different smart city sectors such as smart governance, smart factory, smart energy, smart building, smart mobility, smart infrastructure, smart technology, smart healthcare and smart citizen.
-									<br>This system was architected by the PI in his capacity as AI Devision Head at Sypron Solutions.
-								</p>
-							</div>
-						</div>							
-
-                    </div>
-                    
-					<div class="container">
-						<!-- Content -->      
-						<div id="content">
-						    <div align="left">
-								<a href="https://www.youtube.com/watch?v=FP61hqxA2fM" target="_blank"><img src="images/MineProbe.png" width="270" height="200" style="padding-right: 20px; display: block; float:left; border: none;"></a>
-							</div>
-							
-							<!-- Text on the right -->
-							<div>
-								<h1 class="blog-title">MineProbe</h1>
-								<p>
-									MineProbe is a minefield reconnaissance and mapping system that encompasses a number of spatially distributed unmanned ground vehicles (UGVs) equipped with an efficient multimodal landmine and unexploded ordnances (UXO) detection system and accurate hybrid localization system. The UGVs have been endowed with the ability to move fluidly and efficiently in rough terrain of North West Coast of Egypt.  A centimeter-level accuracy outdoor hybrid localization system for UGVs is developed in this project. A GPR-EMI dual sensor for landmine detection with high detection rates, low false alarms and low false negatives. The system provides a mine map for the minefield that shows the exact locations of the detected landmines and UXOs.
-									<br>This project was conducted under direct supervision of the PI in his capacity as Autonomous Vehicles Professor at Zewail City, Consultant at Innovision and PI of the project MineProbe.
-								</p>
-							</div>
-						</div>
-                    </div>
-
-					</div>
-
-
+<div class="topbar">
+  <div class="wrap mono">
+    <span>King Fahd University of Petroleum and Minerals</span>
+    <span class="topbar__right">
+      <a href="https://ri.kfupm.edu.sa/irc-sml" target="_blank" rel="noopener noreferrer">IRC-SML</a>
+      <a href="https://ise.kfupm.edu.sa/" target="_blank" rel="noopener noreferrer">ISE Department</a>
+      <a href="join.html">We are hiring</a>
+    </span>
+  </div>
 </div>
 
-			<!-- Current research Projects -->
-				<div id="main" class="wrapper style2">
-					<div class="title">Research Collaborators</div>
-					
-					<div class="container">
-					<!-- Content -->
-						<div id="content">
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="11" fill="currentColor"/><g class="glyph"><path d="M24 4c6.63 0 12 5.37 12 12 0 4.2-2.6 9.3-5.4 13.4C27.9 33.3 24 41 24 41s-3.9-7.7-6.6-11.6C14.6 25.3 12 20.2 12 16c0-6.63 5.37-12 12-12Z" fill="none" stroke="var(--accent-contrast)" stroke-width="3"/><g fill="var(--accent-contrast)"><circle cx="20" cy="11.8" r="3.2"/><circle cx="24" cy="10.8" r="3.3"/><circle cx="28" cy="11.8" r="3.2"/><circle cx="17.8" cy="15" r="3.2"/><circle cx="30.2" cy="15" r="3.2"/><circle cx="24" cy="14.8" r="3.6"/><circle cx="19.8" cy="18.2" r="3.2"/><circle cx="28.2" cy="18.2" r="3.2"/><circle cx="24" cy="18.8" r="3.3"/></g></g><g class="cut"><path d="M24 8.2V21.8" stroke="currentColor" stroke-width="1.6"/><path d="M24 12.6h3.6M24 18.4h3M24 15.4h4.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><g fill="currentColor"><circle cx="27.6" cy="12.6" r="1.4"/><circle cx="28.4" cy="15.4" r="1.4"/><circle cx="27" cy="18.4" r="1.4"/></g></g></svg></span>
+      <span class="brand__text">
+        <span class="brand__name">AI for Smart Mobility Lab</span>
+        <span class="brand__sub">Research Lab</span>
+      </span>
+    </a>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+<a href="index.html">Home</a>
+<a href="research.html" aria-current="page">Research</a>
+<a href="team.html">Team</a>
+<a href="facilities.html">Facilities</a>
+<a href="publications.html">Publications</a>
+<a href="talks.html">Talks</a>
+<a href="news.html">News</a>
+<a href="join.html">Join</a>
+<a href="contact.html">Contact</a>
+</nav>
+    <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/></svg><svg class="moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 13.2A8.6 8.6 0 0 1 10.8 3 8.6 8.6 0 1 0 21 13.2Z"/></svg></button>
+    <button class="icon-btn nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
 
-    <div id="map"></div>
-    <script>
-        // Initialize the map
-        const map = L.map('map');
+<main id="main">
+<section class="page-header">
+  <div class="wrap">
+    <div class="section__label">AI4SM Lab</div>
+    <h1>Research</h1>
+    <p class="page-header__sub">Driving innovation for sustainable, inclusive, and safe mobility.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="section__head"><div><div class="section__label">01 / CURRENT PROJECTS</div><h2>Current projects</h2></div><div></div></div>
+<div class="projects"><article class="project"><div class="project__index">01</div><div class="project__media"><img src="images/CAV_Safety.png" alt="Enhancing Safety and Trust in Mixed Traffic Environments with Connected and Automated Vehicles" loading="lazy"></div><div class="project__body"><h3>Enhancing Safety and Trust in Mixed Traffic Environments with Connected and Automated Vehicles</h3><p>The project aims to enhance safety and trust in mixed traffic environments by developing an integrated framework for interactions between Connected and Automated Vehicles (CAVs) and Vulnerable Road Users (VRUs). The research combines multimodal sensing, perception, behavior and intent prediction, VRU adversarial behavior recognition, cooperative perception, and risk-aware decision-making to enable automated vehicles to recognize both normal and potentially unsafe or adversarial VRU behaviors and respond appropriately. The framework will be validated through advanced simulation, hardware-in-the-loop, vehicle-in-the-loop, and controlled field testing, supporting Saudi Vision 2030 goals for safe, trustworthy, and human-centered autonomous mobility.</p><div class="project__meta"><span class="tag"><strong>Funding</strong> KFUPM Deanship of Research</span><span class="tag"><strong>Duration</strong> 2026 to 2029</span></div></div></article><article class="project"><div class="project__index">02</div><div class="project__media"><img src="images/SDV.png" alt="Contextual Observability of Software-Defined Vehicles" loading="lazy"></div><div class="project__body"><h3>Contextual Observability of Software-Defined Vehicles</h3><p>SDV architecture decouples hardware and software, enabling OEMs to manage, update, and enhance vehicle features and functions through software alone. However, SDVs introduce unique challenges in ensuring system resilience, reliability, and real-time fault diagnosis. Observability is critical in such environments but remains underdeveloped for SDVs. This project aims to develop a testbed for SDV contextual observability that enables collecting multimodal telemetry data, facilitating continuous monitoring, advanced analytics, causal inferencing, and automated incident response.</p><div class="project__meta"><span class="tag"><strong>Funding</strong> IRC for Smart Mobility and Logistics (SML) at KFUPM</span><span class="tag"><strong>Duration</strong> 2025 to 2027</span></div></div></article><article class="project"><div class="project__index">03</div><div class="project__media"><img src="images/SIM.png" alt="Agentic AI-based Framework for Seamless Integrated Mobility" loading="lazy"></div><div class="project__body"><h3>Agentic AI-based Framework for Seamless Integrated Mobility</h3><p>Aligning with Saudi Vision 2030, this project supports Saudi Arabia's goals to increase public transit use and improve accessibility for all citizens, including individuals with disabilities, the elderly, and low-income groups. The research focuses on developing an agentic AI-based framework for Seamless Integrated Mobility (SIM), envisioned as a unified platform that integrates multimodal transportation options.</p><div class="project__meta"><span class="tag"><strong>Funding</strong> KFUPM Deanship of Research</span><span class="tag"><strong>Duration</strong> 2025 to 2027</span></div></div></article><article class="project"><div class="project__index">04</div><div class="project__media"><img src="images/Last_mile.jpg" alt="SmartDispatch: AI-driven Optimization for Eco-Efficient Last-Mile Delivery" loading="lazy"></div><div class="project__body"><h3>SmartDispatch: AI-driven Optimization for Eco-Efficient Last-Mile Delivery</h3><p>Saudi Arabia is a major market for eCommerce, with a growing number of people shopping online regularly. This growth has driven an increase in last-mile delivery services, creating a need for more efficient digital platforms. This project addresses the eco-efficient and adaptive routing problem during both liveheading and deadheading states of delivery vehicles, including trucks, cars, cargo bikes, and motorcycles. By optimizing last-mile delivery routes, the project contributes to Saudi Arabia's goal of significantly reducing transportation costs by 2030.</p><div class="project__meta"><span class="tag"><strong>Funding</strong> IRC for Smart Mobility and Logistics (SML) at KFUPM</span><span class="tag"><strong>Duration</strong> 2025 to 2026</span></div></div></article></div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section__head"><div><div class="section__label">02 / SAMPLES OF PREVIOUS PROJECTS</div><h2>Samples of previous projects</h2></div><div></div></div>
+<div class="projects"><article class="project"><div class="project__index">01</div><div class="project__media"><img src="images/GM.png" alt="General Motors Projects" loading="lazy"></div><div class="project__body"><h3>General Motors Projects</h3><p>Before joining KFUPM, the PI served as the AI and Smart Mobility Technical Leader at General Motors Canada. He led AI/ML projects focused on software-defined vehicles, connected and automated driving technologies, active safety systems, and prognostics, achieving successful technology insertions. He co-invented and filed 72 patents, trade secrets, and defensive publications, earning recognition as &ldquo;Inventor of the Month&rdquo; multiple times by GM's Global Patent &amp; Invention Management team. The advanced features developed were for future GM vehicle models; therefore, further details cannot be disclosed due to confidentiality agreements with GM. Additional information about the filed patents can be found <a href="https://alaakhamis.org/publications.html" target="_blank" rel="noopener noreferrer">here</a>.</p></div></article><article class="project"><div class="project__index">02</div><div class="project__media"><img src="images/VRU.png" alt="VRU Crossing Intent Prediction" loading="lazy"></div><div class="project__body"><h3>VRU Crossing Intent Prediction</h3><p>This research project introduces an innovative framework for pedestrian crossing intention prediction. The framework incorporates an image enhancement pipeline, which enables the detection and rectification of various defects that may arise during unfavorable weather conditions. Subsequently, a transformer-based network, featuring a self-attention mechanism, is employed to predict the crossing intentions of target pedestrians. This augmentation enhances the model's resilience and accuracy in classification tasks. Through evaluation on the JAAD dataset, our framework attains state-of-the-art performance while maintaining a notably low inference time. Moreover, a deployment environment is established to assess the real-time performance of the model.</p><div class="project__meta"><span class="tag"><strong>Funding</strong> IoT Research Laboratory, Ontario Tech University</span><span class="tag"><strong>Duration</strong> 2022 to 2024</span><span class="tag">image enhancement, self-attention, vision transformers</span></div></div></article><article class="project"><div class="project__index">03</div><div class="project__media"><img src="images/Robustness.png" alt="Robustness of Deep Learning-based VRU Detection Models" loading="lazy"></div><div class="project__body"><h3>Robustness of Deep Learning-based VRU Detection Models</h3><p>This research project highlights the critical role of accurate pedestrian detection in assisted and automated driving systems to enhance road safety. Real-world deployment faces challenges like image corruption and occlusions, addressed here through robust, stylized, and occluded training techniques. Robust training uses intentionally corrupted examples to simulate real-world scenarios, significantly improving model resilience. Stylized training employs Adaptive Instance Normalization (AdaIN) to introduce texture and style variations, enriching the dataset. Occluded training generates datasets simulating different occlusion levels, improving performance on occluded samples. Together these methods achieve a 2 to 4 percent performance boost, establishing a foundation for deploying reliable pedestrian detection models in complex environments.</p><div class="project__meta"><span class="tag"><strong>Funding</strong> Nile University</span><span class="tag"><strong>Duration</strong> 2022 to 2024</span><span class="tag">assisted and automated driving, VRU detection, model robustness</span></div></div></article><article class="project"><div class="project__index">04</div><div class="project__media"><img src="images/Bus.png" alt="Optimal Placement of Bus Stops" loading="lazy"></div><div class="project__body"><h3>Optimal Placement of Bus Stops</h3><p>Bus systems play an important role in the modern city, and carefully designed bus stop locations can lift overall transportation efficiency and save time for passengers. A Particle Swarm Optimization (PSO)-based approach is proposed to find the optimal placement of bus stops in the Waterloo and Kitchener area. The selection takes into account neighborhood population, family income, age distribution, and other factors, with the goal of minimizing average passenger travel time. Experimental results on real bus lines showed that both PSO and adaptive PSO provide shorter average commuting time than the original routes, using fewer stops.</p><div class="project__meta"><span class="tag"><strong>Funding</strong> University of Toronto</span><span class="tag"><strong>Duration</strong> 2022 to 2023</span><span class="tag">optimal placement, swarm intelligence, particle swarm optimization</span></div></div></article><article class="project"><div class="project__index">05</div><div class="project__media"><a href="https://www.youtube.com/watch?v=lWci4P_Q5ho" target="_blank" rel="noopener noreferrer" aria-label="Watch: Future of Public Transport Experience"><img src="images/epaymenet.png" alt="Future of Public Transport Experience" loading="lazy"></a></div><div class="project__body"><h3>Future of Public Transport Experience</h3><p>E-payment for public transport is a use case built by DM TECH featuring a smart bus-station experience. The concept was designed to visualize the influence of digitalizing public transport accessibility, ticketing, and payment. The experience is also available in VR for user-friendly and interactive simulation.</p><p>This work was conducted under direct supervision of the PI in his capacity as CTO of Disruptive Mobility Tech (DMTech).</p><div class="project__meta"><span class="tag tag--accent">Video</span></div></div></article><article class="project"><div class="project__index">06</div><div class="project__media"><a href="https://www.youtube.com/watch?v=GIWQZ4giurE" target="_blank" rel="noopener noreferrer" aria-label="Watch: Smart City Walkthrough"><img src="images/smartcity.png" alt="Smart City Walkthrough" loading="lazy"></a></div><div class="project__body"><h3>Smart City Walkthrough</h3><p>A smart city concept designed by the DM TECH Experience Design team. The concept features a street walkthrough integrating different technologies to support a smarter, sustainable, and personalized city experience. The experience is also available in VR for user-friendly and interactive simulation.</p><p>This work was conducted under direct supervision of the PI in his capacity as CTO of Disruptive Mobility Tech (DMTech).</p><div class="project__meta"><span class="tag tag--accent">Video</span></div></div></article><article class="project"><div class="project__index">07</div><div class="project__media"><a href="https://www.youtube.com/watch?v=gT1hhBZg5dU" target="_blank" rel="noopener noreferrer" aria-label="Watch: Virtual Ride Experience for Autonomous Driving"><img src="images/AV.png" alt="Virtual Ride Experience for Autonomous Driving" loading="lazy"></a></div><div class="project__body"><h3>Virtual Ride Experience for Autonomous Driving</h3><p>A virtual ride experience for autonomous driving built around Responsibility-Sensitive Safety (RSS), the model-based approach to safety introduced by Mobileye (Shalev-Shwartz et al., 2017). RSS highlights five safety rules an automated driving vehicle should follow: safe distance, cutting in, right of way, limited visibility, and avoiding crashes without causing another one. The environment, vehicle interior, and assessment criteria were built to enable virtual testing and passenger-centric feedback collection using VR.</p><p>This work was conducted under direct supervision of the PI in his capacity as CTO of Disruptive Mobility Tech (DMTech).</p><div class="project__meta"><span class="tag tag--accent">Video</span></div></div></article><article class="project"><div class="project__index">08</div><div class="project__media"><a href="https://www.youtube.com/watch?v=uSGsItMBHnQ" target="_blank" rel="noopener noreferrer" aria-label="Watch: Hyperloop Station Concept: El-Waha Revival"><img src="images/Hyperloop.png" alt="Hyperloop Station Concept: El-Waha Revival" loading="lazy"></a></div><div class="project__body"><h3>Hyperloop Station Concept: El-Waha Revival</h3><p>The El-Waha (The Oasis) Hyperloop station concept simulates the contribution of transportation technology to building the future. The revival story features accessibility, availability, smartness, and design creativity to support smart city infrastructure and user expectations. The architecture concept, design, model, and visualization are owned by DM TECH. The experience is also available in VR.</p><p>This work was conducted under direct supervision of the PI in his capacity as CTO of Disruptive Mobility Tech (DMTech).</p><div class="project__meta"><span class="tag tag--accent">Video</span></div></div></article><article class="project"><div class="project__index">09</div><div class="project__media"><a href="https://www.youtube.com/watch?v=n5RzepPWwbU" target="_blank" rel="noopener noreferrer" aria-label="Watch: Hyperloop Lab Facility"><img src="images/testbed.png" alt="Hyperloop Lab Facility" loading="lazy"></a></div><div class="project__body"><h3>Hyperloop Lab Facility</h3><p>A quick tour of the first Hyperloop lab facility in the world. The Hyperloop is a disruptive solution for the future of mobility and high-speed transport, yet information accessibility and testing availability remain limited worldwide. This lab facility can be used for professional and educational training on Hyperloop and related technologies, allowing students, trainees, and researchers to study and experiment with disruptive transportation systems.</p><p>This work was conducted under direct supervision of the PI in his capacity as CTO of Disruptive Mobility Tech (DMTech).</p><div class="project__meta"><span class="tag tag--accent">Video</span></div></div></article><article class="project"><div class="project__index">10</div><div class="project__media"><a href="https://www.youtube.com/watch?v=h-SNTHZiomE" target="_blank" rel="noopener noreferrer" aria-label="Watch: Fa&ccedil;ade Cleaning Robot"><img src="images/Z21.png" alt="Fa&ccedil;ade Cleaning Robot" loading="lazy"></a></div><div class="project__body"><h3>Fa&ccedil;ade Cleaning Robot</h3><p>Z21 is a smart automated fa&ccedil;ade cleaning system comprising a rooftop robot and a cleaning robot. The rooftop robot is a two-degrees-of-freedom motorized gantry crane responsible for positioning the cleaning robot and carrying the cleaning reagent tanks, hanging cables, and computation tools. The cleaning robot is equipped with advanced motion and stabilization mechanisms and can automatically inspect and clean glass windows and fa&ccedil;ades, with much higher cleaning capacity than state-of-the-art systems and manual cleaning, and is designed to work in severe weather conditions.</p><p>This work was conducted under direct supervision of the PI in his capacity as AI Division Head at Sypron Solutions.</p><div class="project__meta"><span class="tag tag--accent">Video</span></div></div></article><article class="project"><div class="project__index">11</div><div class="project__media"><a href="https://www.youtube.com/watch?v=tceMP_r89-4" target="_blank" rel="noopener noreferrer" aria-label="Watch: Agatha"><img src="images/Agatha.png" alt="Agatha" loading="lazy"></a></div><div class="project__body"><h3>Agatha</h3><p>Predictive maintenance is a cornerstone of Industry 4.0. Agatha is a predictive maintenance system built on cognitive IoT. It encompasses spatially distributed, interoperable, and accessible smart sensors able to selectively collect, fuse, and share data about machine condition. The fused data is analyzed to produce real-time insights, determine and dynamically update the likelihood of failures, and make timely decisions or recommendations. Maintenance schedules can be planned without costly downtime: productivity increases, equipment lifetime is extended, energy is saved, and unplanned stops are reduced or eliminated.</p><p>This system was architected by the PI in his capacity as AI Division Head at Sypron Solutions.</p><div class="project__meta"><span class="tag tag--accent">Video</span></div></div></article><article class="project"><div class="project__index">12</div><div class="project__media"><a href="https://www.youtube.com/watch?v=FP61hqxA2fM" target="_blank" rel="noopener noreferrer" aria-label="Watch: MineProbe"><img src="images/MineProbe.png" alt="MineProbe" loading="lazy"></a></div><div class="project__body"><h3>MineProbe</h3><p>MineProbe is a minefield reconnaissance and mapping system encompassing a number of spatially distributed unmanned ground vehicles (UGVs) equipped with an efficient multimodal landmine and unexploded ordnance (UXO) detection system and an accurate hybrid localization system. The UGVs move fluidly and efficiently in the rough terrain of the North West Coast of Egypt. A centimeter-level accuracy outdoor hybrid localization system was developed in this project, along with a GPR-EMI dual sensor for landmine detection with high detection rates and low false alarms. The system produces a mine map showing the exact locations of detected landmines and UXOs.</p><p>This project was conducted under direct supervision of the PI in his capacity as Autonomous Vehicles Professor at Zewail City, Consultant at InnoVision, and PI of MineProbe.</p><div class="project__meta"><span class="tag tag--accent">Video</span></div></div></article></div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="section__head"><div><div class="section__label">03 / RESEARCH COLLABORATORS</div><h2>Research collaborators</h2><p>We collaborate with partner universities and research groups worldwide.</p></div><div></div></div>
+<div id="map" role="img" aria-label="World map of AI4SM Lab partner universities"></div>
+<script>
+  (function () {
+    var universities = [
+      { name: "University of Toronto", coords: [43.6629, -79.3957], url: "https://www.utoronto.ca" },
+      { name: "Ontario Tech University", coords: [43.9456, -78.8967], url: "https://ontariotechu.ca" },
+      { name: "Carlos III University of Madrid", coords: [40.3326, -3.7677], url: "https://www.uc3m.es" },
+      { name: "Nile University", coords: [30.0272, 31.0139], url: "https://nu.edu.eg" },
+      { name: "Julius-Maximilians-Universit&auml;t W&uuml;rzburg", coords: [49.7876, 9.9352], url: "https://www.uni-wuerzburg.de" },
+      { name: "University of Waterloo", coords: [43.4723, -80.5449], url: "https://uwaterloo.ca" },
+      { name: "University of New Brunswick", coords: [45.9454, -66.6421], url: "https://www.unb.ca" },
+      { name: "Virginia Tech", coords: [37.2296, -80.4243], url: "https://www.vt.edu" },
+      { name: "Federal University of Rio Grande do Sul", coords: [-30.0346, -51.2177], url: "https://www.ufrgs.br" },
+      { name: "Zhejiang University", coords: [30.2638, 120.123], url: "https://www.zju.edu.cn/english" },
+      { name: "Universidad Cat&oacute;lica del Norte", coords: [-23.6436, -70.3994], url: "https://www.ucn.cl" },
+      { name: "&Oacute;buda University", coords: [47.5636, 19.0843], url: "https://www.uni-obuda.hu" },
+      { name: "FARI Institute", coords: [50.845889, 4.357649], url: "https://fari.brussels" },
+      { name: "Amrita University", coords: [11.024, 76.9278], url: "https://www.amrita.edu" }
+    ];
+    var map = L.map('map', { scrollWheelZoom: false });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+    var bounds = [];
+    universities.forEach(function (u) {
+      L.marker(u.coords).addTo(map).bindPopup(
+        '<b>' + u.name + '</b><br><a href="' + u.url + '" target="_blank" rel="noopener">' + u.url + '</a>');
+      bounds.push(u.coords);
+    });
+    map.fitBounds(bounds, { padding: [30, 30] });
+  })();
+</script>
+  </div>
+</section>
 
-        // Add a tile layer
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
+</main>
 
-        // List of universities with coordinates and URLs
-        const universities = [
-            { name: "University of Toronto", coords: [43.6629, -79.3957], url: "https://www.utoronto.ca" },
-            { name: "Ontario Tech University", coords: [43.9456, -78.8967], url: "https://ontariotechu.ca" },
-            { name: "Carlos III University of Madrid", coords: [40.3326, -3.7677], url: "https://www.uc3m.es" },
-            { name: "Nile University", coords: [30.0272, 31.0139], url: "https://nu.edu.eg" },
-            { name: "Julius-Maximilians-Universität Würzburg", coords: [49.7876, 9.9352], url: "https://www.uni-wuerzburg.de" },
-            { name: "University of Waterloo", coords: [43.4723, -80.5449], url: "https://uwaterloo.ca" },
-            { name: "University of New Brunswick", coords: [45.9454, -66.6421], url: "https://www.unb.ca" },
-            { name: "Virginia Tech", coords: [37.2296, -80.4243], url: "https://www.vt.edu" },
-            { name: "Federal University of Rio Grande do Sul", coords: [-30.0346, -51.2177], url: "https://www.ufrgs.br" },
-            { name: "Zhejiang University", coords: [30.2638, 120.1230], url: "https://www.zju.edu.cn/english" },
-            { name: "Universidad Católica del Norte", coords: [-23.6436, -70.3994], url: "https://www.ucn.cl" },
-            { name: "Óbuda University", coords: [47.5636, 19.0843], url: "https://www.uni-obuda.hu" },
-            { name: "Fari Institute", coords: [50.845889, 4.357649], url: "https://fari.brussels" },
-            { name: "Amrita University", coords: [11.0240, 76.9278], url: "https://www.amrita.edu" }
-        ];
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div>
+        <div class="site-footer__mark"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="11" fill="currentColor"/><g class="glyph"><path d="M24 4c6.63 0 12 5.37 12 12 0 4.2-2.6 9.3-5.4 13.4C27.9 33.3 24 41 24 41s-3.9-7.7-6.6-11.6C14.6 25.3 12 20.2 12 16c0-6.63 5.37-12 12-12Z" fill="none" stroke="var(--accent-contrast)" stroke-width="3"/><g fill="var(--accent-contrast)"><circle cx="20" cy="11.8" r="3.2"/><circle cx="24" cy="10.8" r="3.3"/><circle cx="28" cy="11.8" r="3.2"/><circle cx="17.8" cy="15" r="3.2"/><circle cx="30.2" cy="15" r="3.2"/><circle cx="24" cy="14.8" r="3.6"/><circle cx="19.8" cy="18.2" r="3.2"/><circle cx="28.2" cy="18.2" r="3.2"/><circle cx="24" cy="18.8" r="3.3"/></g></g><g class="cut"><path d="M24 8.2V21.8" stroke="currentColor" stroke-width="1.6"/><path d="M24 12.6h3.6M24 18.4h3M24 15.4h4.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><g fill="currentColor"><circle cx="27.6" cy="12.6" r="1.4"/><circle cx="28.4" cy="15.4" r="1.4"/><circle cx="27" cy="18.4" r="1.4"/></g></g></svg><span>AI for Smart Mobility Lab</span></div>
+        <p>Part of the Interdisciplinary Research Center for Smart Mobility and Logistics,
+           King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia.</p>
+        <div class="social">
+<a href="https://github.com/ai4smlab" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z"/></svg></a>
+<a href="https://medium.com/ai4sm" target="_blank" rel="noopener noreferrer" aria-label="Medium publication" title="Medium publication"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12ZM20.96 12c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.51-6.42 3.38-6.42S20.96 8.46 20.96 12ZM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12Z"/></svg></a>
+<a href="https://www.youtube.com/@AI4SM_lab" target="_blank" rel="noopener noreferrer" aria-label="YouTube channel" title="YouTube channel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 3.9 12 3.9 12 3.9s-7.5 0-9.4.5A3 3 0 0 0 .5 6.5C0 8.4 0 12 0 12s0 3.6.5 5.5a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.5.5-5.5s0-3.6-.5-5.5ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg></a>
+<a href="mailto:alaa.rashwan@kfupm.edu.sa" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.3-.5 7.7 5.9L19.7 5H4.3ZM20 7.3l-7.4 5.66a1 1 0 0 1-1.2 0L4 7.3V18.5c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V7.3Z"/></svg></a>
+</div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="join.html">Open positions</a></li>
+          <li><a href="news.html">News and events</a></li>
+          <li><a href="contact.html">Contact and resources</a></li>
+          <li><a href="https://ri.kfupm.edu.sa/irc-sml" target="_blank" rel="noopener noreferrer">IRC-SML at KFUPM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; <span id="year">2026</span> AI for Smart Mobility Lab at KFUPM</span>
+      <span>Directed by <a href="https://alaakhamis.org/" target="_blank" rel="noopener noreferrer">Dr. Alaa Khamis</a></span>
+    </div>
+  </div>
+</footer>
 
-        // Create an array to hold all marker coordinates
-        const bounds = [];
+<button class="to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
 
-        // Add markers for each university
-        universities.forEach(university => {
-            const marker = L.marker(university.coords).addTo(map);
-            marker.bindPopup(
-                `<b>${university.name}</b><br><a href="${university.url}" target="_blank">${university.url}</a>`
-            );
-            bounds.push(university.coords); // Add coordinates to bounds
-        });
-
-        // Adjust the map view to fit all markers
-        map.fitBounds(bounds);
-    </script>
-
-						</div>
-
-
-
-
-
-
-					
-			</div>
-
-			<footer style="margin-top:15px; text-align:center;">
-                <p>&copy; AI4SM Lab at KFUPM, <script>document.write(new Date().getFullYear());</script></p>
-            </footer>
-            
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
 </html>

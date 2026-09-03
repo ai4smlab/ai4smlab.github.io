@@ -1,123 +1,133 @@
-<!DOCTYPE HTML>
-<!--
-	AIMS Lab
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Facilities | AI for Smart Mobility Lab</title>
+<meta name="description" content="The AI4SM Lab's automated driving research platform, software-defined vehicle testbed, SDV prototyping platforms, and high-performance computing workstations.">
+<meta name="keywords" content="AI for Smart Mobility, AI4SM, KFUPM, smart mobility, software-defined vehicles, agentic AI, seamless integrated mobility, last-mile delivery, intelligent transportation">
+<link rel="canonical" href="https://ai4sm.org/facilities.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI for Smart Mobility Lab at KFUPM">
+<meta property="og:title" content="Facilities | AI for Smart Mobility Lab">
+<meta property="og:description" content="The AI4SM Lab's automated driving research platform, software-defined vehicle testbed, SDV prototyping platforms, and high-performance computing workstations.">
+<meta property="og:url" content="https://ai4sm.org/facilities.html">
+<meta property="og:image" content="https://ai4sm.org/images/AV2.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#027e40">
+<link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  // Set the theme before first paint so there is no flash of the wrong colors.
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 
--->
-<html>
-	<head>
-		<title>AI for Smart Mobility Lab @KFUPM</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <style>
-        #map {
-            width: 100%;
-            height: 500px;
-        }
-    </style>
-	</head>
-	<body class="no-sidebar is-preload">
-		<div id="page-wrapper">
+<div class="topbar">
+  <div class="wrap mono">
+    <span>King Fahd University of Petroleum and Minerals</span>
+    <span class="topbar__right">
+      <a href="https://ri.kfupm.edu.sa/irc-sml" target="_blank" rel="noopener noreferrer">IRC-SML</a>
+      <a href="https://ise.kfupm.edu.sa/" target="_blank" rel="noopener noreferrer">ISE Department</a>
+      <a href="join.html">We are hiring</a>
+    </span>
+  </div>
+</div>
 
-			<!-- Header -->
-				<section id="header" class="wrapper">
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="11" fill="currentColor"/><g class="glyph"><path d="M24 4c6.63 0 12 5.37 12 12 0 4.2-2.6 9.3-5.4 13.4C27.9 33.3 24 41 24 41s-3.9-7.7-6.6-11.6C14.6 25.3 12 20.2 12 16c0-6.63 5.37-12 12-12Z" fill="none" stroke="var(--accent-contrast)" stroke-width="3"/><g fill="var(--accent-contrast)"><circle cx="20" cy="11.8" r="3.2"/><circle cx="24" cy="10.8" r="3.3"/><circle cx="28" cy="11.8" r="3.2"/><circle cx="17.8" cy="15" r="3.2"/><circle cx="30.2" cy="15" r="3.2"/><circle cx="24" cy="14.8" r="3.6"/><circle cx="19.8" cy="18.2" r="3.2"/><circle cx="28.2" cy="18.2" r="3.2"/><circle cx="24" cy="18.8" r="3.3"/></g></g><g class="cut"><path d="M24 8.2V21.8" stroke="currentColor" stroke-width="1.6"/><path d="M24 12.6h3.6M24 18.4h3M24 15.4h4.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><g fill="currentColor"><circle cx="27.6" cy="12.6" r="1.4"/><circle cx="28.4" cy="15.4" r="1.4"/><circle cx="27" cy="18.4" r="1.4"/></g></g></svg></span>
+      <span class="brand__text">
+        <span class="brand__name">AI for Smart Mobility Lab</span>
+        <span class="brand__sub">Research Lab</span>
+      </span>
+    </a>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="team.html">Team</a>
+<a href="facilities.html" aria-current="page">Facilities</a>
+<a href="publications.html">Publications</a>
+<a href="talks.html">Talks</a>
+<a href="news.html">News</a>
+<a href="join.html">Join</a>
+<a href="contact.html">Contact</a>
+</nav>
+    <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/></svg><svg class="moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 13.2A8.6 8.6 0 0 1 10.8 3 8.6 8.6 0 1 0 21 13.2Z"/></svg></button>
+    <button class="icon-btn nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
 
-					<!-- Logo -->
-						<div id="logo">
-							<h1>Facilities</h1>
-							<p>Driving innovation for sustainable mobility</p>
-						</div>
+<main id="main">
+<section class="page-header">
+  <div class="wrap">
+    <div class="section__label">AI4SM Lab</div>
+    <h1>Facilities</h1>
+    <p class="page-header__sub">Research platforms and computing infrastructure available to the lab.</p>
+  </div>
+</section>
+<section class="section"><div class="wrap"><section class="facility"><div class="facility__media"><img src="images/AV2.png" alt="Assisted and Automated Driving Research Platform" loading="lazy"></div><div><div class="facility__num">01</div><h3>Assisted and Automated Driving Research Platform</h3><p>A state-of-the-art platform supporting research across perception, planning, control, connectivity, and remote operation. It enables comprehensive experimentation across the full driving stack, supporting sensor fusion from LiDAR, radar, and cameras, along with real-time object detection and tracking for situational awareness. Advanced planning and control modules facilitate research in motion prediction, trajectory generation, and adaptive vehicle control for both assisted and fully automated driving scenarios. Connectivity features enable exploration of cooperative driving concepts using Vehicle-to-Everything (V2X) communication, while the tele-driving module supports studies on remote vehicle operation and supervision.</p></div></section><section class="facility"><div class="facility__media"><img src="images/SDV_testbed.png" alt="Software-Defined Vehicle (SDV) Testbed" loading="lazy"></div><div><div class="facility__num">02</div><h3>Software-Defined Vehicle (SDV) Testbed</h3><p>An open, modular, software-defined architecture that decouples hardware and software layers and follows a centralized zonal design aligned with modern automotive electronic and electrical (E/E) systems. The platform allows researchers to develop, deploy, and test new functionalities independently of physical vehicle components. Vehicle functions are consolidated into powerful computing domains connected through high-speed networks, enabling research into over-the-air software updates, embedded intelligence, cross-domain integration, and real-time data processing. The platform also supports experimentation with digital twins, edge computing, and AI-driven control strategies.</p></div></section><section class="facility"><div class="facility__media"><img src="images/dreamKit.jpg" alt="SDV Prototyping Platforms: dreamKIT and digital.auto" loading="lazy"></div><div><div class="facility__num">03</div><h3>SDV Prototyping Platforms: dreamKIT and digital.auto</h3><p>The lab leverages dreamKIT and digital.auto as complementary platforms for rapid prototyping, experimentation, and education in software-defined vehicles. dreamKIT provides a hands-on environment for developing and demonstrating SDV concepts, enabling researchers and students to experiment with vehicle functions, sensors, interfaces, and software applications without requiring a full-scale vehicle. digital.auto complements this with an open, collaborative ecosystem for prototyping software-defined vehicle functionality using standardized vehicle APIs and virtual vehicle environments. Together they provide a flexible bridge between software prototyping and deployment on the lab's physical SDV testbed.</p></div></section><section class="facility"><div class="facility__media"><img src="images/Spark.jpg" alt="High-Performance Computing Workstations" loading="lazy"></div><div><div class="facility__num">04</div><h3>High-Performance Computing Workstations</h3><p>The lab is equipped with high-performance computing resources that enable data-intensive research and advanced simulation studies. The facility includes two NVIDIA DGX Spark systems with 4 TB storage and integrated DLI bundles, providing GPU computing capabilities for deep learning, perception, and control algorithm development. These systems are complemented by Dell Precision 5860 workstations powered by Intel Xeon W3-2423 processors and Dell U4025QW UltraSharp 40-inch curved Thunderbolt hub monitors, providing a powerful environment for software development, large-scale data visualization, simulation, and AI model training.</p></div></section></div></section>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li><a href="news.html">News</a></li>
-								<li><a href="team.html">Team</a></li>
-								<li><a href="research.html">Research</a></li>
-								<li><a href="facilities.html">Facilities</a></li>
-								<li><a href="publications.html">Publications</a></li>
-							    <li><a href="talks.html">Tech Talks</a></li>
-								<li><a href="join.html">Join</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
-							</ul>
-						</nav>
+</main>
 
-				</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div>
+        <div class="site-footer__mark"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="11" fill="currentColor"/><g class="glyph"><path d="M24 4c6.63 0 12 5.37 12 12 0 4.2-2.6 9.3-5.4 13.4C27.9 33.3 24 41 24 41s-3.9-7.7-6.6-11.6C14.6 25.3 12 20.2 12 16c0-6.63 5.37-12 12-12Z" fill="none" stroke="var(--accent-contrast)" stroke-width="3"/><g fill="var(--accent-contrast)"><circle cx="20" cy="11.8" r="3.2"/><circle cx="24" cy="10.8" r="3.3"/><circle cx="28" cy="11.8" r="3.2"/><circle cx="17.8" cy="15" r="3.2"/><circle cx="30.2" cy="15" r="3.2"/><circle cx="24" cy="14.8" r="3.6"/><circle cx="19.8" cy="18.2" r="3.2"/><circle cx="28.2" cy="18.2" r="3.2"/><circle cx="24" cy="18.8" r="3.3"/></g></g><g class="cut"><path d="M24 8.2V21.8" stroke="currentColor" stroke-width="1.6"/><path d="M24 12.6h3.6M24 18.4h3M24 15.4h4.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><g fill="currentColor"><circle cx="27.6" cy="12.6" r="1.4"/><circle cx="28.4" cy="15.4" r="1.4"/><circle cx="27" cy="18.4" r="1.4"/></g></g></svg><span>AI for Smart Mobility Lab</span></div>
+        <p>Part of the Interdisciplinary Research Center for Smart Mobility and Logistics,
+           King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia.</p>
+        <div class="social">
+<a href="https://github.com/ai4smlab" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z"/></svg></a>
+<a href="https://medium.com/ai4sm" target="_blank" rel="noopener noreferrer" aria-label="Medium publication" title="Medium publication"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12ZM20.96 12c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.51-6.42 3.38-6.42S20.96 8.46 20.96 12ZM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12Z"/></svg></a>
+<a href="https://www.youtube.com/@AI4SM_lab" target="_blank" rel="noopener noreferrer" aria-label="YouTube channel" title="YouTube channel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 3.9 12 3.9 12 3.9s-7.5 0-9.4.5A3 3 0 0 0 .5 6.5C0 8.4 0 12 0 12s0 3.6.5 5.5a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.5.5-5.5s0-3.6-.5-5.5ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg></a>
+<a href="mailto:alaa.rashwan@kfupm.edu.sa" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.3-.5 7.7 5.9L19.7 5H4.3ZM20 7.3l-7.4 5.66a1 1 0 0 1-1.2 0L4 7.3V18.5c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V7.3Z"/></svg></a>
+</div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="join.html">Open positions</a></li>
+          <li><a href="news.html">News and events</a></li>
+          <li><a href="contact.html">Contact and resources</a></li>
+          <li><a href="https://ri.kfupm.edu.sa/irc-sml" target="_blank" rel="noopener noreferrer">IRC-SML at KFUPM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; <span id="year">2026</span> AI for Smart Mobility Lab at KFUPM</span>
+      <span>Directed by <a href="https://alaakhamis.org/" target="_blank" rel="noopener noreferrer">Dr. Alaa Khamis</a></span>
+    </div>
+  </div>
+</footer>
 
-			<!-- Current research Projects -->
-				<div id="main" class="wrapper style2">
-					<div class="title">Lab Facilities</div>
-					
-					<div class="container">
-					<!-- Content -->
-						<div id="content">
-							<div align="left">
-								<img src="images/AV2.png" width="400" height="190" alt="SDV"  style="padding-right: 30px; display: block; float:left; border: none;">
-							</div>
+<button class="to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
 
-							<div>
-								<h1 class="blog-title">Assisted and Automated Driving Research Platform</h1>
-							</div>
-							<div><p class="muted">A state-of-the-art platform supporting research across perception, planning, control, connectivity, and remote operation. It enables comprehensive experimentation across the full driving stack, including perception, decision-making, and control. The platform supports sensor fusion from LiDAR, radar, and cameras, along with real-time object detection and tracking for situational awareness. Advanced planning and control modules facilitate research in motion prediction, trajectory generation, and adaptive vehicle control for both assisted and fully automated driving scenarios. Connectivity features allow for the exploration of cooperative driving concepts using Vehicle-to-Everything (V2X) communication, while the tele-driving module supports studies on remote vehicle operation and supervision. Together, these capabilities make the platform a powerful testbed for innovation in autonomous mobility, safety, and human–vehicle interaction research.</p>
-							</div>
-						</div>
-                    </div>
-                    
-					<div class="container">
-					<!-- Content -->
-						<div id="content">
-							<div align="left">
-								<img src="images/SDV_testbed.png" width="330" height="200" alt="SIM"  style="padding-right: 20px; display: block; float:left; border: none;">
-							</div>
-
-							<div>
-								<h1 class="blog-title">Software‑Defined Vehicle (SDV) Testbed</h1>
-							</div>
-							<div>
-								<p class="muted">Open, modular, software-defined architecture that decouples hardware and software layers and follows a centralized zonal design aligned with modern E/E vehicle systems. It is designed around the concept of decoupling hardware and software layers, allowing researchers to develop, deploy, and test new functionalities independent of physical vehicle components. The testbed adopts a centralized zonal architecture, reflecting the latest advancements in automotive electronic and electrical (E/E) systems, where vehicle functions are consolidated into powerful computing domains connected through high-speed networks. This setup enables investigation into over-the-air software updates, embedded intelligence, cross-domain integration, and real-time data processing. The platform also supports experimentation with digital twins, edge computing, and AI-driven control strategies, making it an ideal environment for advancing research in vehicle software architectures, safety, cybersecurity, and lifecycle management.</p>
-							</div>
-						</div>
-					</div>	
-		
-					<div class="container">
-					<!-- Content -->
-						<div id="content">
-							<div align="left">
-								<img src="images/Spark.jpg" width="230" height="200" alt="Spark"  style="padding-right: 30px; display: block; float:left; border: none;">
-							</div>
-
-							<div>
-								<h1 class="blog-title">High‑Performance Workstations</h1>
-							</div>
-							<div>
-								<p>AI for Smart Mobility Lab is equipped with high-performance computing resources that enable data-intensive research and advanced simulation studies. It includes two NVIDIA DGX Spark systems with 4 TB storage and integrated DLI bundles, providing exceptional GPU computing power for deep learning, perception, and control algorithm development. Complementing these are Dell Precision 5860 workstations powered by Intel Xeon W3-2423 processors and paired with Dell U4025QW UltraSharp 40-inch Curved Thunderbolt Hub Monitors, offering researchers a powerful and ergonomic setup for software development, large-scale data visualization, and model training.
-								</p>
-							</div>
-						</div>					
-					</div>	
-											
-						
-					
-					</div>
-					
-
-				</div>
-
-
-			<footer style="margin-top:15px; text-align:center;">
-                <p>&copy; AI4SM Lab at KFUPM, <script>document.write(new Date().getFullYear());</script></p>
-            </footer>	
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
 </html>
